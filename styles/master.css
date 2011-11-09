@@ -1,9 +1,13 @@
-#settings{
-   display:none;
+#holder{
+   width:900px;
+   margin-left:auto;
+   margin-right:auto;
+   padding:20px;
 }
 
+/* HEADER */
 #header{
-   margin:10px 20px;
+
 }
 
 #logo{
@@ -18,6 +22,14 @@
 #submit_search{
    margin-left:10px;
 }
+
+/* BODY */
+#settings{
+   display:none;
+}
+
+/* FOOTER */
+
 
 .clear{
    clear:both;
