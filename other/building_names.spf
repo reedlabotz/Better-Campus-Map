@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>database</key>
+			<string>labotz1_cs465</string>
+			<key>host</key>
+			<string>dcs-projects.cs.illinois.edu</string>
+			<key>kcid</key>
+			<string>-2775120384287079031</string>
+			<key>name</key>
+			<string>dcs-projects.cs.illinois.edu</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>labotz1_reed</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {990, 545}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>INSERT INTO building_names ( SELECT id, name FROM buildings );
+</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>290</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>INSERT INTO building_names ( SELECT id, name FROM buildings )</string>
+		<string>INSERT INTO buildings (name,address) VALUES ('1203 1/2 West Nevada Street','1203 1/2 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1203 West Nevada Street','1203 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1203 West Oregon Street','1203 West Oregon Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1204 West Nevada Street','1204 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1205 West Nevada Street','1205 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1206 West Nevada Street','1206 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1207 West Oregon Street','1204 West Oregon&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1208 West Nevada Street','1208 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1208 West Springfield','Springfield and Goodwin&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('505 East Green Street','505 East Green Street Suite 3&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('507 East Daniel Street','507 East Daniel Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('507 East Green Street','507 East Green Street&lt;br /&gt;Champaign, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('510 East Chalmers Street','510 East Chalmers Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('512 East Chalmers Street','512 East Chalmers Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('708 South Mathews Avenue','708 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('805 West Pennsylvania Avenue','805 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('911 South Sixth Street','911 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('912 South Fifth Street','912 South Fifth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Abbot Scrubber Building','21 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Abbott Power Plant','1117 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('ACES Library, Information and Alumni Center','1101 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Acid Rain Field Building','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Activities and Recreation Center','201 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Administrative Information Technology Services Building (AITS)','50 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Admissions and Records','901 West Illinois Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Advanced Computation Building','1011 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Aerodynamics Research Lab','1025 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Aeronautical Lab A','101 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Afro-American Studies and Research Program','1201 West Nevada&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('AG/PPFM Warehouses','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agricultural Bioprocess Laboratory','1302 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agricultural Storage','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agriculture Engineering Sciences Building','1304 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agriculture Services Building','1917 South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agriculture Services Warehouse','1919 South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Department Barn','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Field Laboratory - USDA','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agronomy/Plant Pathology Farm','West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Seed House','2102 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Sheetmetal Barn','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Soybean Research Farm','1308 West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Alice Campbell Alumni Center','601 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Allen Residence Hall','1005 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Altgeld Hall','1409 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Animal Sciences Laboratory','1207 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Anthropology Storage','2127 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Aquatic Research Field Laboratory','51 East Hazelwood Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Arboretum - Hartley Gardens','1800 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Architecture Building','608 East Lorado Taft Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Armory','505 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Armory Avenue Warehouse','20 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Art and Design Building','408 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Art E Annex, Studio 2','1301 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Art East Annex, Studio 1','1208 West Peabody Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Art Studio','2128 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ashton Woods Family and Graduate Housing','2221-2319 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Assembly Hall','1800 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Astronomy Building','1002 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Atkins Tennis Center','1800 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Atmospheric Sciences Building','103 South Gregory Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Aviation Ground School','205 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Band Building','1103 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Barton Residence Hall','1205 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Beckman Institute','405 North Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Beckwith Hall','201 East John Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Beef Farms','St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Bee Research Facility','606 West Windsor Road&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Bevier Hall','905 South Goodwin Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Bielfeldt Athletic Administration Building','1700 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Biological Control Laboratory','1904 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Biomedical Magnetic Resonance Facility','2100 South Goodwin Avenue Extended&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Building Research Council','1 East St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Building Research Council Laboratory','1804 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Building Research Laboratory','1806 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Burnsides Research Laboratory','1208 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Burrill Hall','407 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Busey-Evans Residence Halls','1111-1115 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campbell Hall for Public Telecommunications','300 North Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campus Honors Program','1205 West Oregon Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campus Recreation Center East (CRCE)','1102 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campus Recreation Outdoor Center','51 East Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Career Center (in Student Services Arcade Bldg.)','713 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Center for Advanced Study','912 West Illinois Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Center on Democracy in a Multiracial Society','1108 West Stoughton Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Central Stores Receiving Building','1609 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ceramics','2110 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ceramics Building','105 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Ceramics Kiln House','107 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Champaign Residence Halls','Fourth Street and Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Chemical and Life Science Laboratory (A)','601 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Chemical and Life Science Laboratory (B and C)','602 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Chemistry Annex','601 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Child Development Laboratory','1105 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Children''s Research Center','51 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Claims Management Office','100 Trade Centre Drive, Suite 103&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Clark Hall Housing Administration','1203 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Clay Hydrology Laboratory','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Coble Hall','805 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('College of Business Instructional Facility','515 East Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Colonel Wolfe School','401 East Healey Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Computing Applications Building','605 East Springfield Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Coordinated Science Laboratory','1308 West Main Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Core Storage Building','South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Credit Union Building','2201 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Credit Union Mini-branch','502 East John Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('CSREC Building','2008 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Dairy Research Farm','South Lincoln Avenue&lt;br /&gt;Urbana, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Dance Administration Building','907 1/2 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Dance Studio','905 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Daniels Hall (Graduate Housing)','1010 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Davenport Hall','607 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('David Kinley Hall','1407 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Digital Computer Laboratory','1304 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Doris Kelley Christopher Hall','904 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Driver Training Facility','8 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Driver Training Site Storage Building','6 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Early Child Development Building','1005 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Education Building','1310 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Eichelberger Field','1201 West Florida Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Electrical Engineering Storage','2121 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Engineering Hall','1308 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Engineering Quad','North of Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Engineering Sciences Building','1101 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Engineering Senior Design Studio','1013 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Engineering Student Project Lab','1023 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('English Building','608 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Enterprise Works','60 Hazelwood Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Entomology Laboratory','1902 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Environmental Health and Safety','101 South Gregory Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Environmental Research Annex','1009 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Everitt Lab','1406 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Firemanship Training Center','11 Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Fire Service Institute','9 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Fire Substation','1105 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Flagg Hall','1207 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Florida and Lincoln Playing Fields Complex','Florida Avenue and Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Florida Avenue Residence Halls','Florida Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Foellinger Auditorium','709 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Food Science Dry Processing Laboratory','Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Food Storage Shed - Hort Field Laboratory','South Orchard Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Foreign Languages Building','707 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Freer Hall','906 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Fuel and Oil Storage Tanks','1717 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Garage/Car Pool','1701 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Garage - Hort Field Laboratory','South Orchard Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('General Arts','2111 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Geological Survey Laboratory','1116 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Glass Building','2116 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Goodwin-Green Apartments','Goodwin Avenue and Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Government and Public Affairs, Institute of','1007 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Graduate Painting','2109 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Graduate Photography','2108 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Grainger Engineering Library Information Center','1301 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Gregory Hall','810 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Gregory Place I','701 Gregory Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Gregory Place II','1010 W. Nevada St.&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Hallene Gateway','Illinois Street and Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Harker Hall','1305 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Henry Administration Building','506 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Horse Farms','St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Hort Fields Research Laboratory','South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Horticulture Field Laboratory','1707 South Orchard Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Housing Food Stores','1321 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Housing Warehouse','511 West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Huff Hall','1206 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Hydrogen Liquefier Building','1301 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Hydrosystems Lab','301 North Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('I Building','1816 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ice Arena','406 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('ICS Oregon Computing Laboratory','901 West Oregon Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('iCyt','2100 South Oak Street&lt;br /&gt;Champaign, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('I Hotel and Conference Center','1900 South First Street&lt;br /&gt;Champaign, IL 61820-6914');
+INSERT INTO buildings (name,address) VALUES ('Illini Grove','Lincoln Avenue and Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Illini Hall','721 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Illini Union','1401 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Illini Union Bookstore','807 and 809 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Illini Union Warehouse #2','509 West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Illinois Field','1605 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Illinois Library Computer System Office','501 East Daniel Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Illinois Radio Reader','59 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Illinois State Water Survey','2204 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Illinois Street Residence Halls','Illinois Street and Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Illinois Sustainable Technology Research Center','1 East Hazelwood Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Implement Shed','Hazelwood Drive - North Side&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Imported Swine Research Laboratory','201 Hazelwood Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Indoor Golf Facility','1415 West St. Marty&amp;apos;s Road&lt;br /&gt;Urbana, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Institute for Genomic Biology','1206 West Gregory Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('International Studies Building','910 South Fifth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Irwin Academic Services Center','402 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Irwin Indoor Football Practive Facility','301 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Japan House','2000 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Kenney Gym','1402 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Kenney Gym Annex','1402 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Krannert Art Museum and Kinkead Pavillion','500 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Krannert Center for the Performing Arts','500 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Labor and Employment Relations, School of','504 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Law Building','504 East Pennsylvania Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Levis Faculty Center','919 West Illinois Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Library and Information Science','501 East Daniel Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Lincoln Avenue Residence Hall','1005 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Lincoln Hall','702 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Loomis Lab','1110 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Lundgren Residence Hall','1201 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Machine and Equine Storage Shed - Agronomy','West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Machinery Storage Building','West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Machine Storage Building','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Madigan Laboratory','1201 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Mailing Center','1611 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Main Library','1408 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Materials Science and Engineering Building','1304 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('McFarland Carillion','South Quad&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('McKinley Health Center','1109 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Meat Science Laboratory','1503 South Maryland Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Mechanical Engineering Building','1206 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Mechanical Engineering Laboratory','105 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Medical Sciences Building','506 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Memorial Stadium','200 East Florida Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Micro and Nanotechnology Laboratory','208 North Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Morrill Hall','505 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Morrow Plots','Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Motorcycle Safety Program','4 Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Motorola Building','1801 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Multiplex Playing Fields','First Street and Stadium Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Mumford Hall','1301 West Gregory Drive&lt;br /&gt;Urbana, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Mumford House','1403 West Lorado Taft Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Music Building','1114 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Music Education Annex','909 West Oregon Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('National Center for Supercomputing Applications (NCSA)','1205 West Clark Street&lt;br /&gt;Urbana, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('National Soybean Research Center','1101 West Peabody Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Natural History Building','1301 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Natural History Survey Greenhouse','614 East Pennsylvania Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural History Survey Storage B #1','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural History Survey Storage B #2','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural History Survey Storage B #3','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural History Survey Storage B #4','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural History Survey Storage B #5','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural Resources Building','607 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural Resources Garage','608 East Pennsylvania Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Natural Resources Studies Annex','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('NCSA Petascale Computing Facility','1725 South Oak Street&lt;br /&gt;Champaign, IL 61820-6931');
+INSERT INTO buildings (name,address) VALUES ('Newmark Laboratory','Stoughten Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Noble Hall','1209 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('North Campus Chiller Plant','305 North Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Noyes Lab','505 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Nuclear Engineering Laboratory','103 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Nuclear Physics Laboratory','23 East Stadium Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Nuclear Radiations Laboratory','201 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Nursing, School of','408 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Nursing Workshop','Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Oak Street Chiller Plant','1305 Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('OandM Storage Building','Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Observatory','901 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Optical Physics and Engineering Laboratory','607 East Healey Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Orchard Downs Family Housing','1900 South Orchard Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Paleo-Botanical Storage','2115 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Parking Garage (2005)','University Avenue and Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Parking Structure','1105 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Pennsylvania Avenue Residence Halls','906 West College Court&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Personnel Services Building','52 East Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Pesticide Storage','1008 West Hazelwood Drive - North Side&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Pest Management Laboratory','1810 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Physical Plant Service Building','1501 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Physical Plant Storage Building A','1501 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Physics Research Laboratory Storage','301 East Hazelwood Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Plant Pesticide Diagnostic Clinic','1201 St. Mary&amp;apos;s Road&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Plant Sciences Laboratory','1201 South Dorner Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Plant Sciences Laboratory Greenhouses','1201 South Dorner Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Plant Services Building NE','1005 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Plant Services Storage Building','1015 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Police Training Institute','1004 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Police Training Institute','1004 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Poultry Farm','St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Presidential Towers/University Inn','302 East John Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('President''s House','711 West Florida Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Printing and Photographic Services Building','54A East Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Printing Services Annex','51 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Printing Services South Building','1805 South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Professional Arts Building','501 South Sixth St.&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Psychology Building','603 East Daniel Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Public Safety','1110 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Raindrop Tower Building - Agronomy','Hazelwood Drive - North Side&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Rehabilitation Education Center','1207 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Richmond Studio','1110 West Main Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Roger Adams Laboratory','600 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Round Barns','1201 East St. Mary&amp;apos;s Road&lt;br /&gt;61802 61802');
+INSERT INTO buildings (name,address) VALUES ('SAIC','1901 South First Street, Suite D-1&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Sculpture Building','2122 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Seitz Materials Research Laboratory (MRL)','104 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Sheet Metal Barn - Weedlab - USDA','Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Sherman Residence Hall','909 South Fifth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Siebel Center (2003)','201 North Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Slavic Review','57 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Smith Hall','805 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Soccer and Track Stadium','St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Soil Sample','Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Special Materials Storage Facility','2006 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Speech and Hearing Clinic','901 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Spurlock Museum','600 South Gregory Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('State Regional Office Building','2125 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Stock Pavillion','1402 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Structural Warehouse','1017 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Student Dining and Residential Programs Building','301 East Gregory Drive&lt;br /&gt;Champaign, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Student Services Arcade Building','713 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Superconductivity Center','100 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Surveying Building','607 East Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Swanlund Administration Building','601 East John Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Taft House','1401 South Maryland Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Taft Residence Hall','1213 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Talbot Lab','104 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Technology Commercialization Building','2004 South Wright Street Extended&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Temple Hoyne Buell Hall','611 East Lorado Taft Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('The Quad','Between Green Street and Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Timothy J. Nugent Hall - Ikenberry Commons','207 East Gregory Drive&lt;br /&gt;Champaign, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Transportation Building','104 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Turner Hall','1102 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Turner Hall Greenhouses','1102 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Turner Student Services Building','610 East John Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ubben Basketball Facility','1750 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Undergraduate Library','1402 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('University High School','1212 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('University High School Gymnasium','1207 West Stoughton Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('University Press Building','1325 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('USDA Growth Chamber Building','Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('USDA Nematology Greenhouse','1105 Dorner Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('USDA Storage Shed','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Van Doren Residence Hall','302 Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Vegetable Crops Building','1103 South Dorner Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Vet Med Basic Sciences Building','2001 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Vet Med Feed Storage Building','2105 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Vet Med Surgery and Obstetrics Laboratory','1102 West Hazelwood Drive&lt;br /&gt;Urbana, IL 61802');
+INSERT INTO buildings (name,address) VALUES ('Vet Teaching Hospital','1008 West Hazelwood Drive&lt;br /&gt;Urbana, IL 61802');
+INSERT INTO buildings (name,address) VALUES ('Vivarium, Shelford','608 East Healey Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Volatile Storage Building','1409 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Water Survey Warehouse','2107 Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Wohlers Hall','1206 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Wood Engineering Laboratory','1305 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Z-2 Building','2001 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Z-Building','1901 South First Street&lt;br /&gt;Champaign, IL 82820')</string>
+		<string>INSERT INTO buildings (name,address) VALUES ('1203 1/2 West Nevada Street','1203 1/2 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1203 West Nevada Street','1203 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1203 West Oregon Street','1203 West Oregon Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1204 West Nevada Street','1204 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1205 West Nevada Street','1205 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1206 West Nevada Street','1206 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1207 West Oregon Street','1204 West Oregon&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1208 West Nevada Street','1208 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('1208 West Springfield','Springfield and Goodwin&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('505 East Green Street','505 East Green Street Suite 3&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('507 East Daniel Street','507 East Daniel Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('507 East Green Street','507 East Green Street&lt;br /&gt;Champaign, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('510 East Chalmers Street','510 East Chalmers Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('512 East Chalmers Street','512 East Chalmers Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('708 South Mathews Avenue','708 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('805 West Pennsylvania Avenue','805 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('911 South Sixth Street','911 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('912 South Fifth Street','912 South Fifth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Abbot Scrubber Building','21 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Abbott Power Plant','1117 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('ACES Library, Information and Alumni Center','1101 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Acid Rain Field Building','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Activities and Recreation Center','201 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Administrative Information Technology Services Building (AITS)','50 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Admissions and Records','901 West Illinois Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Advanced Computation Building','1011 West Springfield Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Aerodynamics Research Lab','1025 West Western Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Aeronautical Lab A','101 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Afro-American Studies and Research Program','1201 West Nevada&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('AG/PPFM Warehouses','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agricultural Bioprocess Laboratory','1302 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agricultural Storage','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agriculture Engineering Sciences Building','1304 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agriculture Services Building','1917 South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agriculture Services Warehouse','1919 South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Department Barn','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Field Laboratory - USDA','South Wright Street Extended&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agronomy/Plant Pathology Farm','West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Seed House','2102 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Sheetmetal Barn','East Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Agronomy Soybean Research Farm','1308 West Hazelwood Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Alice Campbell Alumni Center','601 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Allen Residence Hall','1005 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Altgeld Hall','1409 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Animal Sciences Laboratory','1207 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Anthropology Storage','2127 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Aquatic Research Field Laboratory','51 East Hazelwood Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Arboretum - Hartley Gardens','1800 South Lincoln Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Architecture Building','608 East Lorado Taft Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Armory','505 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Armory Avenue Warehouse','20 East Armory Avenue&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Art and Design Building','408 East Peabody Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Art E Annex, Studio 2','1301 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Art East Annex, Studio 1','1208 West Peabody Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Art Studio','2128 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ashton Woods Family and Graduate Housing','2221-2319 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Assembly Hall','1800 South First Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Astronomy Building','1002 West Green Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Atkins Tennis Center','1800 South Wright Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Atmospheric Sciences Building','103 South Gregory Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Aviation Ground School','205 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Band Building','1103 South Sixth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Barton Residence Hall','1205 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Beckman Institute','405 North Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Beckwith Hall','201 East John Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Beef Farms','St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Bee Research Facility','606 West Windsor Road&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Bevier Hall','905 South Goodwin Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Bielfeldt Athletic Administration Building','1700 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Biological Control Laboratory','1904 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Biomedical Magnetic Resonance Facility','2100 South Goodwin Avenue Extended&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Building Research Council','1 East St. Mary&amp;apos;s Road&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Building Research Council Laboratory','1804 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Building Research Laboratory','1806 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Burnsides Research Laboratory','1208 West Pennsylvania Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Burrill Hall','407 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Busey-Evans Residence Halls','1111-1115 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campbell Hall for Public Telecommunications','300 North Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campus Honors Program','1205 West Oregon Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campus Recreation Center East (CRCE)','1102 West Gregory Drive&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Campus Recreation Outdoor Center','51 East Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Career Center (in Student Services Arcade Bldg.)','713 South Wright Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Center for Advanced Study','912 West Illinois Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Center on Democracy in a Multiracial Society','1108 West Stoughton Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Central Stores Receiving Building','1609 South Oak Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ceramics','2110 South Griffith Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Ceramics Building','105 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Ceramics Kiln House','107 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Champaign Residence Halls','Fourth Street and Gregory Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Chemical and Life Science Laboratory (A)','601 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Chemical and Life Science Laboratory (B and C)','602 South Goodwin Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Chemistry Annex','601 South Mathews Avenue&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Child Development Laboratory','1105 West Nevada Street&lt;br /&gt;Urbana, IL 61801');
+INSERT INTO buildings (name,address) VALUES ('Children''s Research Center','51 East Gerty Drive&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Claims Management Office','100 Trade Centre Drive, Suite 103&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Clark Hall Housing Administration','1203 South Fourth Street&lt;br /&gt;Champaign, IL 61820');
+INSERT INTO buildings (name,address) VALUES ('Clay Hydrology Laboratory','1910 South Griffith Drive&lt;br /&gt;Champaign, IL 61820')</string>
+		<string>INSERT INTO buildings (name,address) VALUES ('1203 West Nevada Street','1203 West Nevada Street&lt;br /&gt;Urbana, IL 61801')</string>
+		<string>INSERT INTO buildings (name,address) VALUES ('Test','Test')</string>
+		<string>INSELT INTO buildings (name,address) VALUES ('Test','Test')</string>
+		<string>select * from buildings</string>
+		<string>SELECT * FROM `comments` WHERE `project_id`='1'</string>
+		<string>UPDATE competitors SET `votes`=0</string>
+		<string>UPDATE competitors SET `votes`=1 WHERE `id`=1</string>
+		<string>UPDATE competitors SET (`votes`=1) WHERE `id`=1</string>
+		<string>SELECT * FROM competitors WHERE `human` = 1</string>
+		<string>SELECT * FROM competitors WHERE `human` = 0</string>
+		<string>SELECT COUNT(`id`) As `count` FROM questions WHERE `team_id`=1</string>
+		<string>SELECT * FROM teams JOIN (SELECT COUNT(`id`) AS Q_Count, `team_id` FROM questions GROUP BY `team_id`) AS question_count</string>
+		<string>SELECT * FROM teams JOIN (SELECT COUNT(`id`) AS Q_Count, `team_id` FROM questions GROUP BY `team_id`)</string>
+		<string>INSERT INTO competitor_questions (`question_id`,`competitor_id`,`answer`) VALUES (1,1,True)</string>
+		<string>INSERT INTO competitors (`team_id`,`human`) VALUES (1,True)</string>
+		<string>INSERT INTO questions (`text`) VALUES ('What is the square root of 2?')</string>
+		<string>INSERT INTO questions ('text') VALUES ('What is the square root of 2?')</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.0.92-community</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>
