@@ -1,12 +1,15 @@
 <?php
 require("head.php");
 ?>
-   <div class="mapHolder">
+   <div class="left">
+      Digital Computing Laboratory
+   </div>
+   <div class="right">
 	   <div id="container">
    		<div id="content"></div>
    	</div>
 	</div>
-	
+	<div class="clear"></div>
 	<div id="settings">
 		<div><label for="scrollingX">ScrollingX: </label><input type="checkbox" id="scrollingX" checked/></div>
 		<div><label for="scrollingY">ScrollingY: </label><input type="checkbox" id="scrollingY" checked/></div>

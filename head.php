@@ -4,6 +4,13 @@
    <title>Better Campus Map</title>
 	<link rel="stylesheet" href="styles/ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="styles/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script src="scripts/zynga-scroller/Animate.js" type="text/javascript" charset="utf-8"></script>
+   <script src="scripts/zynga-scroller/Scroller.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- Common Library -->
+	<script src="scripts/zynga-scroller/common/Engine.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/zynga-scroller/common/Style.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
    <div id="holder">
@@ -15,16 +22,3 @@
          <div class="clear"></div>
       </div>
       <div id="main">
-         <p>Main stuff</p>
-         <p>Main stuff</p>
-         <p>Main stuff</p>
-         <p>Main stuff</p>
-         <p>Main stuff</p>
-         <p>Main stuff</p>
-      </div>
-      <div id="footer">
-         Footer
-      </div>
-   </div>
-</body>
-</html>
