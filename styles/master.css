@@ -1,0 +1,25 @@
+#settings{
+   display:none;
+}
+
+#header{
+   margin:10px 20px;
+}
+
+#logo{
+   float:left;
+}
+
+#search{
+   float:right;
+   margin-top:50px;
+}
+
+#submit_search{
+   margin-left:10px;
+}
+
+.clear{
+   clear:both;
+   width:100%;
+}
