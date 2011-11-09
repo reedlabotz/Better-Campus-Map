@@ -17,9 +17,9 @@ body{
 #container{
 	position: absolute;
 	left: 20px;
-	top: 20px;
+	top: 95px;
 	bottom: 20px;
-	right: 240px;
+	right: 20px;
 	border: 5px solid black;
 	cursor: default;
 	overflow: hidden;
