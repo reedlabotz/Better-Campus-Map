@@ -23,7 +23,7 @@
 <body>
    <div id="holder">
       <div id="header">
-         <div id="logo"><img src="images/logo.png" width="131" height="93" alt="Logo"></div>
+         <div id="logo"><a href="index.php"><img src="images/logo.png" width="131" height="93" alt="Logo" border="0"></a></div>
          <div id="search">
 				<form action="search.php" method="post">
             	<input id="building" type="text" autocomplete="off" name="searchterm">

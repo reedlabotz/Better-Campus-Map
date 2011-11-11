@@ -66,7 +66,7 @@ require('database.php');
 				zynga.common.Style.set(content, "transform", "translate(" + (-left) + "px," + (-top) + "px) scale(" + zoom + ")");
 			};
 		}
-
+		scroller.zoomTo(.5);
 	</script>
 <?php
 require("foot.php");
