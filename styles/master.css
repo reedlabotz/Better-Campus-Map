@@ -147,6 +147,18 @@ body{
 .doorIcon{
    display:none;
 }
+
+.infoBox{
+   display:none;
+   background:#ffffff;
+   border:1px solid black;
+   z-index:9999999;
+   padding:5px;
+}
+.infoBox strong{
+   font-weight:bold;
+}
+
 .parkingIcon{
    display:none;
 }
