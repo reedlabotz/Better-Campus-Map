@@ -105,6 +105,28 @@ body{
    width:900px;
    height:450px;
 }
+#exteriorControls{
+   z-index:9000;
+}
+
+#interiorControls{
+   z-index:9000;
+   display:none;
+}
+.floorButton{
+   background:#ffd599;
+   width:20px;
+   height:20px;
+   margin-bottom:5px;
+   border:1px solid black;
+   text-align:center;
+   font-height:20px;
+   cursor: pointer;
+}
+
+.floorButton.selected{
+   background:#f28d1e;
+}
 
 .name{
    font-size:16px;

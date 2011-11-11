@@ -11,6 +11,8 @@ $today = getdate();
 
 $dow = $today['wday'];
 $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+
+$floors = split(",",$row['floors']);
 ?>
    <div class="left">
       <p class="name"><?= $row['name'] ?></p>
@@ -39,8 +41,17 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 			<div id="interiorMapOverlay">
 			</div>
 			<div id="controls">
-				<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
-				<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+				<div id="exteriorControls">
+					<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
+					<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+				</div>
+				<div id="interiorControls">
+					<?
+					for($i=0;$i<count($floors);$i++){
+						echo "<div class='floorButton'>".$floors[$i]."</div>";
+					}
+					?>
+				</div>
 			</div>
    		<div id="content">
 				<?
@@ -128,9 +139,16 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 		var choosenBuilding;
 		var choosenFloor;
 		function showInterion(building){
+			hideExterior();
 			$("#interiorMapOverlay").show();
+			$("#interiorControls").show();
 			choosenBuilding = building;
 			choosenFloor = 1;
+			$(".floorButton").each(function(){
+				if($(this).html() == "1"){
+					$(this).addClass("selected");
+				}
+			});
 			loadFloor();
 		}
 		function loadFloor(){
@@ -142,11 +160,22 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 			});
 		}
 		
+		function hideExterior(){
+			$("#exteriorControls").hide();
+		}
+		
 		$(document).ready(function(){
 			$(".button").click(function(){
 				$(this).toggleClass("selected");
 				loadFloor();
-			})
+			});
+			
+			$(".floorButton").click(function(){
+				$(".floorButton").removeClass("selected");
+				$(this).addClass("selected");
+				choosenFloor = $(this).html();
+				loadFloor();
+			});
 		});
 	</script>
 <?php
