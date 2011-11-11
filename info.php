@@ -24,7 +24,7 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 				}
 				echo $dows[$i].": ".$row["hours_".$i];
 				if($i == $dow){
-					echo "<strong>";
+					echo "</strong>";
 				}
 				if($i != 6){
 					echo "<br>\n";
@@ -36,6 +36,10 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
    </div>
    <div class="right">
 	   <div id="container">
+			<div id="controls">
+				<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
+				<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+			</div>
    		<div id="content"></div>
    	</div>
 	</div>

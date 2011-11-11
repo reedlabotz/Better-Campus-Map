@@ -47,20 +47,12 @@ for (var i=0, l=checkboxes.length; i<l; i++) {
 	}, false);
 }
 
-document.querySelector("#settings #zoom").addEventListener("click", function() {
-	scroller.zoomTo(parseFloat(document.getElementById("zoomLevel").value));
-}, false);
-
-document.querySelector("#settings #zoomIn").addEventListener("click", function() {
+document.querySelector("#zoomInBtn").addEventListener("click", function() {
 	scroller.zoomBy(1.2, true);
 }, false);
 
-document.querySelector("#settings #zoomOut").addEventListener("click", function() {
+document.querySelector("#zoomOutBtn").addEventListener("click", function() {
 	scroller.zoomBy(0.8, true);
-}, false);
-
-document.querySelector("#settings #scrollTo").addEventListener("click", function() {
-	scroller.scrollTo(parseFloat(document.getElementById("scrollLeft").value), parseFloat(document.getElementById("scrollTop").value), true);
 }, false);
 
 document.querySelector("#settings #scrollByUp").addEventListener("click", function() {

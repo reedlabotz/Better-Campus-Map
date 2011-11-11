@@ -108,7 +108,28 @@ body{
    height:450px;
 }
 
+.name{
+   font-size:16px;
+}
+
+.address{
+   padding-top:20px;
+}
+
+.phone{
+   padding-top:20px;
+}
+
+.hours{
+   padding-top:20px;
+}
+
+.hours strong{
+   font-weight:bold;
+}
+
 .directions{
+   padding-top:30px;
    font-size:12px;
 }
 
