@@ -65,7 +65,29 @@ $floors = split(",",$row['floors']);
 					mysql_free_result($result);
 				
 				?>
-   			
+   			<?
+					$query = "SELECT * FROM map_elements";
+					$result2 = mysql_query($query);
+					while($thing = mysql_fetch_array($result2, MYSQL_ASSOC)){
+						?>
+						<div style="position:absolute;top:<?= $thing['y']; ?>px;left:<?= $thing['x']; ?>px;text-decoration:none;">
+						<?
+							if($thing['type'] == "B"){
+								echo '<img src="images/icons/BikeIcon.png" width="25" alt="BikeIcon" class="bikeIcon">';
+							}else if($thing['type'] == "T"){
+								echo '<img src="images/icons/BusIcon.png" width="25" alt="BusIcon" class="busIcon">';
+							}else if($thing['type'] == "D"){
+								echo '<img src="images/icons/DoorIcon.png" width="25" alt="DoorIcon" class="doorIcon">';
+							}else if($thing['type'] == "P"){
+								echo '<img src="images/icons/ParkingIcon.png" width="25" alt="ParkingIcon" class="parkingIcon">';
+							}
+						?>	
+						</div>
+						<?
+					}
+					mysql_free_result($result);
+				
+				?>
    		</div>
    	</div>
 		<div id="mapOptions">
@@ -170,6 +192,10 @@ $floors = split(",",$row['floors']);
 		}
 		
 		function hideExterior(){
+			$(".parkingIcon").hide();
+			$(".bikeIcon").hide();
+			$(".busIcon").hide();
+			$(".doorIcon").hide();
 			$("#ext").removeClass("selected");
 			$("#exteriorControls").hide();
 			$("#exteriorOptions").hide();
@@ -189,10 +215,42 @@ $floors = split(",",$row['floors']);
 			$("#interiorOptions").hide();
 		}
 		
+		function loadExteriorElements(){
+			if($("#door").hasClass("selected")){
+				$(".doorIcon").show();
+			}else{
+				$(".doorIcon").hide();
+			}
+			
+			if($("#parking").hasClass("selected")){
+				$(".parkingIcon").show();
+			}else{
+				$(".parkingIcon").hide();
+			}
+			
+			if($("#bike").hasClass("selected")){
+				$(".bikeIcon").show();
+			}else{
+				$(".bikeIcon").hide();
+			}
+			
+			if($("#bus").hasClass("selected")){
+				$(".busIcon").show();
+			}else{
+				$(".busIcon").hide();
+			}
+		}
+		
 		$(document).ready(function(){
 			$(".button").click(function(){
 				$(this).toggleClass("selected");
-				loadFloor();
+				console.log($(this).attr('id'));
+				if($(this).attr('id') == "elevator" || $(this).attr('id') == "food" || $(this).attr('id') == "restroom"){
+					loadFloor();
+				}else{
+					loadExteriorElements();
+				}
+				
 			});
 			
 			$(".floorButton").click(function(){

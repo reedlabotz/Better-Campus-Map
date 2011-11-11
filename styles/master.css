@@ -136,6 +136,21 @@ body{
    background:#c9cccf;
 }
 
+.bikeIcon{
+   display:none;
+}
+
+.busIcon{
+   display:none;
+}
+
+.doorIcon{
+   display:none;
+}
+.parkingIcon{
+   display:none;
+}
+
 .floorButton{
    background:#ffd599;
    width:20px;
