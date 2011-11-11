@@ -57,16 +57,16 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
    	</div>
 		<div id="mapOptions">
 			<div id="interior">
-				<div id="elevator"></div>
-				<div id="restroom"></div>
-				<div id="food"></div>
+				<div id="elevator" class="button"></div>
+				<div id="restroom" class="button"></div>
+				<div id="food" class="button"></div>
 				<div class="clear"></div>
 			</div>
 			<div id="exterior">
-				<div id="bike"></div>
-				<div id="bus"></div>
-				<div id="door"></div>
-				<div id="parking"></div>
+				<div id="bike" class="button"></div>
+				<div id="bus" class="button"></div>
+				<div id="door" class="button"></div>
+				<div id="parking" class="button"></div>
 				<div class="clear"></div>
 			</div>
 		</div>

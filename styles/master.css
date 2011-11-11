@@ -133,33 +133,58 @@ body{
 
 #mapOptions{
    margin-top:470px;
+}
+
+#interior{
    margin-left:auto;
    margin-right:auto;
    width:360px;
 }
 
-#elevator{
-   background:url('../images/buttons/ElevatorButton.png') no-repeat;
+#exterior{
+   margin-left:auto;
+   margin-right:auto;
+   width:490px;
+}
+
+.button{
    width:100px;
    height:100px;
    float:left;
    padding-right:30px;
+}
+
+#elevator{
+   background:url('../images/buttons/ElevatorButton.png') no-repeat;
 }
 
 #restroom{
    background:url('../images/buttons/RestroomButton.png') no-repeat;
-   width:100px;
-   height:100px;
-   float:left;
-   padding-right:30px;
 }
 
 #food{
    background:url('../images/buttons/FoodButton.png') no-repeat;
-   width:100px;
-   height:100px;
-   float:left;
+   padding-right:0px;
 }
+
+#bike{
+   background:url('../images/buttons/BikeButton.png') no-repeat;
+}
+
+#bus{
+   background:url('../images/buttons/BusButton.png') no-repeat;
+}
+
+#door{
+   background:url('../images/buttons/DoorButton.png') no-repeat;
+}
+
+#parking{
+   background:url('../images/buttons/ParkingButton.png') no-repeat;
+   padding-right:0px;
+}
+
+
 
 /* FOOTER */
 #footer{
