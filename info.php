@@ -36,6 +36,8 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
    </div>
    <div class="right">
 	   <div id="container">
+			<div id="interiorMapOverlay">
+			</div>
 			<div id="controls">
 				<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
 				<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
@@ -56,6 +58,7 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
    		</div>
    	</div>
 		<div id="mapOptions">
+			<div id="tabs"><div class="tab">Exterior</div><div class="tab"><a href="javascript:showInterion(<?= $id; ?>);">Interior</a></div></div>
 			<div id="interior">
 				<div id="elevator" class="button"></div>
 				<div id="restroom" class="button"></div>
@@ -121,6 +124,30 @@ $dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Satur
 		
 		scroller.zoomTo(1.8);
 		scroller.scrollTo(<?= $row['x']+800; ?>, <?= $row['y']; ?>);
+		
+		var choosenBuilding;
+		var choosenFloor;
+		function showInterion(building){
+			$("#interiorMapOverlay").show();
+			choosenBuilding = building;
+			choosenFloor = 1;
+			loadFloor();
+		}
+		function loadFloor(){
+			var e = $("#elevator").hasClass("selected");
+			var r = $("#restroom").hasClass("selected");
+			var f = $("#food").hasClass("selected");
+			$.get("interior.php?id="+choosenBuilding+"&floor="+choosenFloor+"&e="+e+"&r="+r+"&f="+f,function(data){
+				$("#interiorMapOverlay").html(data);
+			});
+		}
+		
+		$(document).ready(function(){
+			$(".button").click(function(){
+				$(this).toggleClass("selected");
+				loadFloor();
+			})
+		});
 	</script>
 <?php
 require("foot.php");
