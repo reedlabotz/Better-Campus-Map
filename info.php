@@ -70,7 +70,7 @@ $floors = split(",",$row['floors']);
 					$result2 = mysql_query($query);
 					while($thing = mysql_fetch_array($result2, MYSQL_ASSOC)){
 						?>
-						<div style="position:absolute;top:<?= $thing['y']; ?>px;left:<?= $thing['x']; ?>px;text-decoration:none;">
+						<div class="icon" style="position:absolute;top:<?= $thing['y']; ?>px;left:<?= $thing['x']; ?>px;text-decoration:none;">
 						<?
 							if($thing['type'] == "B"){
 								echo '<img src="images/icons/BikeIcon.png" width="25" alt="BikeIcon" class="bikeIcon">';
@@ -80,6 +80,7 @@ $floors = split(",",$row['floors']);
 								echo '<img src="images/icons/DoorIcon.png" width="25" alt="DoorIcon" class="doorIcon">';
 							}else if($thing['type'] == "P"){
 								echo '<img src="images/icons/ParkingIcon.png" width="25" alt="ParkingIcon" class="parkingIcon">';
+								echo "<div class='infoBox'><p><strong>".$thing['name']."</strong></p><p>".$thing['details']."</p></div>";
 							}
 						?>	
 						</div>
@@ -258,6 +259,12 @@ $floors = split(",",$row['floors']);
 				$(this).addClass("selected");
 				choosenFloor = $(this).html();
 				loadFloor();
+			});
+			
+			$(".icon .parkingIcon").hover(function(){
+				$(this).parent().children(".infoBox").show();
+			},function(){
+				$(this).parent().children(".infoBox").hide();
 			});
 		});
 	</script>
