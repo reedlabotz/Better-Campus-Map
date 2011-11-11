@@ -251,6 +251,7 @@ $floors = split(",",$row['floors']);
 					loadExteriorElements();
 				}
 				
+				console.log("."+$(this).attr('id') +"Icon");
 				if($(this).hasClass("selected")){
 					$("."+$(this).attr('id') +"Icon").effect("pulsate",{ times:2 },300);
 				}

@@ -39,13 +39,13 @@ $floor = mysql_real_escape_string($_GET['floor']);
 		<div style="position:absolute;top:<?= $y; ?>px;left:<?= $x; ?>px;">
 			<?
 			if($thing['type'] == "E" && $e == "true"){
-				echo '<img src="images/icons/ElevatorIcon.png" width="25" alt="ElevatorIcon">';
+				echo '<img src="images/icons/ElevatorIcon.png" width="25" class="elevatorIcon">';
 			}else if($thing['type'] == "S" && $e == "true"){
-				echo '<img src="images/icons/StairIcon.png" width="25" alt="StairIcon">';
+				echo '<img src="images/icons/StairIcon.png" width="25" class="elevatorIcon">';
 			}else if($thing['type'] == "R" && $r == "true"){
-				echo '<img src="images/icons/RestroomIcon.png" width="25" alt="RestroomIcon">';
+				echo '<img src="images/icons/RestroomIcon.png" width="25" class="restroomIcon">';
 			}else if($thing['type'] == "F" && $f == "true"){
-				echo '<img src="images/icons/FoodIcon.png" width="25" alt="FoodIcon">';
+				echo '<img src="images/icons/FoodIcon.png" width="25" class="foodIcon">';
 			}
 			?>
 		</div>
