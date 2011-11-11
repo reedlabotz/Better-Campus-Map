@@ -105,6 +105,28 @@ body{
    width:900px;
    height:450px;
 }
+#exteriorControls{
+   z-index:9000;
+}
+
+#interiorControls{
+   z-index:9000;
+   display:none;
+}
+.floorButton{
+   background:#ffd599;
+   width:20px;
+   height:20px;
+   margin-bottom:5px;
+   border:1px solid black;
+   text-align:center;
+   font-height:20px;
+   cursor: pointer;
+}
+
+.floorButton.selected{
+   background:#f28d1e;
+}
 
 .name{
    font-size:16px;
@@ -129,6 +151,19 @@ body{
 .directions{
    padding-top:30px;
    font-size:12px;
+}
+
+#interiorMapOverlay{
+   width:500px;
+
+   position:absolute;
+   top:25px;
+   left:50px;
+   background:#fff;
+   z-index:9999;
+   border:2px solid black;
+   display:none;
+   overflow:hidden;
 }
 
 #mapOptions{
@@ -157,30 +192,53 @@ body{
 #elevator{
    background:url('../images/buttons/ElevatorButton.png') no-repeat;
 }
+#elevator.selected{
+   background:url('../images/buttons/ElevatorButtonSelected.png') no-repeat;
+}
 
 #restroom{
    background:url('../images/buttons/RestroomButton.png') no-repeat;
+}
+#restroom.selected{
+   background:url('../images/buttons/RestroomButtonSelected.png') no-repeat;
 }
 
 #food{
    background:url('../images/buttons/FoodButton.png') no-repeat;
    padding-right:0px;
 }
+#food.selected{
+   background:url('../images/buttons/FoodButtonSelected.png') no-repeat;
+   padding-right:0px;
+}
 
 #bike{
    background:url('../images/buttons/BikeButton.png') no-repeat;
+}
+#bike.selected{
+   background:url('../images/buttons/BikeButtonSelected.png') no-repeat;
 }
 
 #bus{
    background:url('../images/buttons/BusButton.png') no-repeat;
 }
+#bus.selected{
+   background:url('../images/buttons/BusButtonSelected.png') no-repeat;
+}
 
 #door{
    background:url('../images/buttons/DoorButton.png') no-repeat;
 }
+#door.selected{
+   background:url('../images/buttons/DoorButtonSelected.png') no-repeat;
+}
 
 #parking{
    background:url('../images/buttons/ParkingButton.png') no-repeat;
+   padding-right:0px;
+}
+#parking.selected{
+   background:url('../images/buttons/ParkingButtonSelected.png') no-repeat;
    padding-right:0px;
 }
 
