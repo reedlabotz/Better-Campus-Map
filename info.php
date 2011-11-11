@@ -70,7 +70,7 @@ $floors = split(",",$row['floors']);
 					$result2 = mysql_query($query);
 					while($thing = mysql_fetch_array($result2, MYSQL_ASSOC)){
 						?>
-						<div class="icon" style="position:absolute;top:<?= $thing['y']; ?>px;left:<?= $thing['x']; ?>px;text-decoration:none;">
+						<div class="icon" style="position:absolute;top:<?= $thing['y']-10; ?>px;left:<?= $thing['x']-15; ?>px;text-decoration:none;">
 						<?
 							if($thing['type'] == "B"){
 								echo '<img src="images/icons/BikeIcon.png" width="25" alt="BikeIcon" class="bikeIcon">';
