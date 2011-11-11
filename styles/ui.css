@@ -18,12 +18,11 @@ body{
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	bottom: 0px;
 	right: 0px;
 	border: 2px solid black;
 	cursor: default;
 	overflow: hidden;
-
+   height:450px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
