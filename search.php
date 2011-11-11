@@ -1,4 +1,5 @@
 <?php
+require("head.php");
 
 /*set varibles from form */
 
@@ -20,7 +21,7 @@ else {
 require_once('classes/CMySQL.php');
 
 //using database as source of data
-        $sRequest = "SELECT `name` FROM `building_names` WHERE `name` LIKE '%{$searchterm}%' ORDER BY `id`";
+        $sRequest = "SELECT `name`,`id` FROM `building_names` WHERE `name` LIKE '%{$searchterm}%' ORDER BY `id`";
         $aItemInfo = $GLOBALS['MySQL']->getAll($sRequest);
 		
         foreach ($aItemInfo as $aValues) {
@@ -30,7 +31,7 @@ require_once('classes/CMySQL.php');
 		if ($i <= 10)
 		{
 			foreach ($aItemInfo as $aValues) {
-            	echo $aValues['name'] . "<br/>";
+            	echo "<a href='info.php?id=".$aValues['id']."'>".$aValues['name'] . "</a><br/>";
        		 }
 		}
 		
@@ -39,4 +40,5 @@ require_once('classes/CMySQL.php');
 		}
 		
 }
+require("foot.php");
 ?>
