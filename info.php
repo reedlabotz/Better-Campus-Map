@@ -77,7 +77,7 @@ $floors = split(",",$row['floors']);
 				</div>
 				<div id="interiorControls">
 					<?
-					for($i=0;$i<count($floors);$i++){
+					for($i=count($floors)-1;$i>=0;$i--){
 						echo "<div class='floorButton'>".$floors[$i]."</div>";
 					}
 					?>
