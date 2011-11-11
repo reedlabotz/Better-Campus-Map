@@ -165,12 +165,13 @@ $floors = split(",",$row['floors']);
 		var choosenBuilding;
 		var choosenFloor;
 		
-		function loadFloor(){
+		function loadFloor(callback){
 			var e = $("#elevator").hasClass("selected");
 			var r = $("#restroom").hasClass("selected");
 			var f = $("#food").hasClass("selected");
 			$.get("interior.php?id="+choosenBuilding+"&floor="+choosenFloor+"&e="+e+"&r="+r+"&f="+f,function(data){
 				$("#interiorMapOverlay").html(data);
+				callback();
 			});
 		}
 		
@@ -188,7 +189,7 @@ $floors = split(",",$row['floors']);
 					$(this).addClass("selected");
 				}
 			});
-			loadFloor();
+			loadFloor(function(){});
 		}
 		
 		function hideExterior(){
@@ -244,13 +245,23 @@ $floors = split(",",$row['floors']);
 		$(document).ready(function(){
 			$(".button").click(function(){
 				$(this).toggleClass("selected");
-				console.log($(this).attr('id'));
+				
 				if($(this).attr('id') == "elevator" || $(this).attr('id') == "food" || $(this).attr('id') == "restroom"){
-					loadFloor();
+					var show = $(this).hasClass("selected");
+					var thingClass = "."+$(this).attr('id') +"Icon";
+					loadFloor(function(){
+						if(show){
+							$(thingClass).effect("pulsate",{ times:2 },300);
+						}
+					});
 				}else{
 					loadExteriorElements();
 				}
 				
+				
+				if($(this).hasClass("selected")){
+					$("."+$(this).attr('id') +"Icon").effect("pulsate",{ times:2 },300);
+				}
 			});
 			
 			$(".floorButton").click(function(){

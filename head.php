@@ -17,6 +17,7 @@
 	<script src="scripts/zynga-scroller/common/Style.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript" src="scripts/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
    <script type="text/javascript" src="scripts/jquery.autocomplete.pack.js"></script>
    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
