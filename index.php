@@ -1,30 +1,27 @@
 <?php
 require("head.php");
+require('database.php');
 ?>
    <div class="mapHolder">
 	   <div id="container">
-   		<div id="content"></div>
+			<div id="controls">
+				<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
+				<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+			</div>
+   		<div id="content">
+				<?
+					$query = "SELECT x,y,width,height,id FROM buildings WHERE x IS NOT NULL";
+					$result2 = mysql_query($query);
+					while($building = mysql_fetch_array($result2, MYSQL_ASSOC)){
+						?>
+						<a href="info.php?id=<?= $building['id']; ?>" style="position:absolute;top:<?= $building['y']; ?>px;left:<?= $building['x']; ?>px;width:<?= $building['width']; ?>px;height:<?= $building['height']; ?>px;text-decoration:none;">&nbsp;</a>
+						<?
+					}
+					mysql_free_result($result);
+				
+				?>
+   		</div>
    	</div>
-	</div>
-	
-	<div id="settings">
-		<div><label for="scrollingX">ScrollingX: </label><input type="checkbox" id="scrollingX" checked/></div>
-		<div><label for="scrollingY">ScrollingY: </label><input type="checkbox" id="scrollingY" checked/></div>
-		<div><label for="animating">Animating: </label><input type="checkbox" id="animating" checked/></div>
-		<div><label for="bouncing">Bouncing: </label><input type="checkbox" id="bouncing" checked/></div>
-		<div><label for="locking">Locking: </label><input type="checkbox" id="locking" checked/></div>
-
-		<div><label for="zooming">Zooming: </label><input type="checkbox" id="zooming" checked/></div>
-		<div><label for="minZoom">Min Zoom: </label><input type="text" id="minZoom" size="5" value="0.5"/></div>
-		<div><label for="maxZoom">Max Zoom: </label><input type="text" id="maxZoom" size="5" value="3"/></div>
-		<div><label for="zoomLevel">Zoom Level: </label><input type="text" id="zoomLevel" size="5"/></div>
-		<div><button id="zoom">Zoom to Level</button><button id="zoomIn">+</button><button id="zoomOut">-</button></div>
-		
-		<div><label for="scrollLeft">Scroll Left: </label><input type="text" id="scrollLeft" size="9"/></div>
-		<div><label for="scrollTop">Scroll Top: </label><input type="text" id="scrollTop" size="9"/></div>
-		<div><button id="scrollTo">Scroll to Coords</button></div>
-
-		<div><button id="scrollByUp">&uarr;</button><button id="scrollByDown">&darr;</button><button id="scrollByLeft">&larr;</button><button id="scrollByRight">&rarr;</button></div>
 	</div>
 	
 	<!-- Create Scroller, bind UI layer and mouse/touch events -->

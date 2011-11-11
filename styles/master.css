@@ -87,7 +87,6 @@ body{
    padding-top:10px;
    padding-bottom:10px;
    position:relative;
-   height:450px;
 }
 
 .left{
@@ -133,8 +132,29 @@ body{
    font-size:12px;
 }
 
-#settings{
-   display:none;
+#mapOptions{
+   margin-top:450px;
+}
+
+#elevator{
+   background:url('../images/buttons/ElevatorButton.png');
+   width:100px;
+   height:100px;
+   float:left;
+}
+
+#restroom{
+   background:url('../images/buttons/RestroomButton.png');
+   width:100px;
+   height:100px;
+   float:left;
+}
+
+#food{
+   background:url('../images/buttons/FoodButton.png');
+   width:100px;
+   height:100px;
+   float:left;
 }
 
 /* FOOTER */

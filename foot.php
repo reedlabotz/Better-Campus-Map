@@ -1,6 +1,6 @@
       </div>
       <div id="footer">
-         Footer
+         &copy; Better Campus Maps 2011
       </div>
    </div>
 </body>
