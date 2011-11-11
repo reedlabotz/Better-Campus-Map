@@ -189,7 +189,7 @@ $floors = split(",",$row['floors']);
 					$(this).addClass("selected");
 				}
 			});
-			loadFloor();
+			loadFloor(function(){});
 		}
 		
 		function hideExterior(){
