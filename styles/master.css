@@ -98,7 +98,6 @@ body{
    width:600px;
    float:right;
    position:relative;
-   height:450px;
 }
 
 .mapHolder{
@@ -133,25 +132,30 @@ body{
 }
 
 #mapOptions{
-   margin-top:450px;
+   margin-top:470px;
+   margin-left:auto;
+   margin-right:auto;
+   width:360px;
 }
 
 #elevator{
-   background:url('../images/buttons/ElevatorButton.png');
+   background:url('../images/buttons/ElevatorButton.png') no-repeat;
    width:100px;
    height:100px;
    float:left;
+   padding-right:30px;
 }
 
 #restroom{
-   background:url('../images/buttons/RestroomButton.png');
+   background:url('../images/buttons/RestroomButton.png') no-repeat;
    width:100px;
    height:100px;
    float:left;
+   padding-right:30px;
 }
 
 #food{
-   background:url('../images/buttons/FoodButton.png');
+   background:url('../images/buttons/FoodButton.png') no-repeat;
    width:100px;
    height:100px;
    float:left;
