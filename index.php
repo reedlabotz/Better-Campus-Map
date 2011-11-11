@@ -5,8 +5,40 @@ require('database.php');
    <div class="mapHolder">
 	   <div id="container">
 			<div id="controls">
-				<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
-				<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+				<table>
+					<tr>
+						<td></td>
+						<td>
+							<img src="images/buttons/NorthButton.png" width="21" height="35" alt="NorthButton" id="panN">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/buttons/WestButton.png" width="35" height="21" alt="WestButton" id="panW">
+						</td>
+						<td></td>
+						<td>
+							<img src="images/buttons/EastButton.png" width="35" height="21" alt="EastButton" id="panE">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<img src="images/buttons/SouthButton.png" width="21" height="35" alt="SouthButton" id="panS">
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
+							<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+						</td>
+						<td></td>
+				</table>
+				
+				
 			</div>
    		<div id="content">
 				<?
@@ -14,7 +46,7 @@ require('database.php');
 					$result2 = mysql_query($query);
 					while($building = mysql_fetch_array($result2, MYSQL_ASSOC)){
 						?>
-						<a href="info.php?id=<?= $building['id']; ?>" style="position:absolute;top:<?= $building['y']; ?>px;left:<?= $building['x']; ?>px;width:<?= $building['width']; ?>px;height:<?= $building['height']; ?>px;text-decoration:none;">&nbsp;</a>
+						<a href="info.php?id=<?= $building['id']; ?>" style="position:absolute;top:<?= $building['y']; ?>px;left:<?= $building['x']; ?>px;width:<?= $building['width']; ?>px;height:<?= $building['height']; ?>px;text-decoration:none;" class='buildingClickZone'>&nbsp;</a>
 						<?
 					}
 				
@@ -48,6 +80,7 @@ require('database.php');
 				elem.style.width = cellWidth + "px";
 				elem.style.height = cellHeight + "px";
 				elem.style.display = "inline-block";
+				elem.className = "mapTile";
 				elem.innerHTML = "&nbsp;";
 				frag.appendChild(elem);
 			}
