@@ -113,6 +113,29 @@ body{
    z-index:9000;
    display:none;
 }
+
+#interiorOptions{
+   display:none;
+}
+
+.tab a{
+   float:left;
+   width:150px;
+   border-left:1px solid black;
+   border-right:1px solid black;
+   border-top:1px solid black;
+   text-align:center;
+   margin-right:10px;
+   padding:5px;
+   display:block;
+   color:black;
+   text-decoration:none;
+}
+
+.tab.selected a{
+   background:#c9cccf;
+}
+
 .floorButton{
    background:#ffd599;
    width:20px;

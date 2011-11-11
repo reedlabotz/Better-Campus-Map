@@ -69,14 +69,18 @@ $floors = split(",",$row['floors']);
    		</div>
    	</div>
 		<div id="mapOptions">
-			<div id="tabs"><div class="tab">Exterior</div><div class="tab"><a href="javascript:showInterion(<?= $id; ?>);">Interior</a></div></div>
-			<div id="interior">
+			<div id="tabs">
+				<div class="tab selected" id="ext"><a href="javascript:showExterior();">Exterior</a></div>
+				<div class="tab" id="int"><a href="javascript:showInterion(<?= $id; ?>);">Interior</a></div>
+				<div class="clear"></div>
+			</div>
+			<div id="interiorOptions">
 				<div id="elevator" class="button"></div>
 				<div id="restroom" class="button"></div>
 				<div id="food" class="button"></div>
 				<div class="clear"></div>
 			</div>
-			<div id="exterior">
+			<div id="exteriorOptions">
 				<div id="bike" class="button"></div>
 				<div id="bus" class="button"></div>
 				<div id="door" class="button"></div>
@@ -138,19 +142,7 @@ $floors = split(",",$row['floors']);
 		
 		var choosenBuilding;
 		var choosenFloor;
-		function showInterion(building){
-			hideExterior();
-			$("#interiorMapOverlay").show();
-			$("#interiorControls").show();
-			choosenBuilding = building;
-			choosenFloor = 1;
-			$(".floorButton").each(function(){
-				if($(this).html() == "1"){
-					$(this).addClass("selected");
-				}
-			});
-			loadFloor();
-		}
+		
 		function loadFloor(){
 			var e = $("#elevator").hasClass("selected");
 			var r = $("#restroom").hasClass("selected");
@@ -160,8 +152,41 @@ $floors = split(",",$row['floors']);
 			});
 		}
 		
+		function showInterion(building){
+			hideExterior();
+			$("#interiorOptions").show();
+			$("#interiorMapOverlay").show();
+			$("#interiorControls").show();
+			$("#int").addClass("selected");
+			choosenBuilding = building;
+			choosenFloor = 1;
+			$(".floorButton").removeClass("selected");
+			$(".floorButton").each(function(){
+				if($(this).html() == "1"){
+					$(this).addClass("selected");
+				}
+			});
+			loadFloor();
+		}
+		
 		function hideExterior(){
+			$("#ext").removeClass("selected");
 			$("#exteriorControls").hide();
+			$("#exteriorOptions").hide();
+		}
+		
+		function showExterior(){
+			hideInterior();
+			$("#ext").addClass("selected");
+			$("#exteriorControls").show();
+			$("#exteriorOptions").show();
+		}
+		
+		function hideInterior(){
+			$("#int").removeClass("selected");
+			$("#interiorMapOverlay").hide();
+			$("#interiorControls").hide();
+			$("#interiorOptions").hide();
 		}
 		
 		$(document).ready(function(){
