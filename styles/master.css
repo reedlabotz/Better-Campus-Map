@@ -152,7 +152,7 @@ body{
    display:none;
    background:#ffffff;
    border:1px solid black;
-   z-index:9999999;
+   z-index:999999999999;
    padding:5px;
    max-width:200px;
 }

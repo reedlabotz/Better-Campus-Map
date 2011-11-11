@@ -244,13 +244,16 @@ $floors = split(",",$row['floors']);
 		$(document).ready(function(){
 			$(".button").click(function(){
 				$(this).toggleClass("selected");
-				console.log($(this).attr('id'));
+				
 				if($(this).attr('id') == "elevator" || $(this).attr('id') == "food" || $(this).attr('id') == "restroom"){
 					loadFloor();
 				}else{
 					loadExteriorElements();
 				}
 				
+				if($(this).hasClass("selected")){
+					$("."+$(this).attr('id') +"Icon").effect("pulsate",{ times:2 },300);
+				}
 			});
 			
 			$(".floorButton").click(function(){
