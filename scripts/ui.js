@@ -1,6 +1,6 @@
 // Settings
-var contentWidth = 200*11;
-var contentHeight = 200*15;
+var contentWidth = 200*12;
+var contentHeight = 200*11;
 var cellWidth = 200;
 var cellHeight = 200;
 

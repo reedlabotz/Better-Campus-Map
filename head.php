@@ -4,6 +4,7 @@
    <title>Better Campus Map</title>
 	<link rel="stylesheet" href="styles/ui.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="styles/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Mako' rel='stylesheet' type='text/css'>
 	
 	<script src="scripts/zynga-scroller/Animate.js" type="text/javascript" charset="utf-8"></script>
    <script src="scripts/zynga-scroller/Scroller.js" type="text/javascript" charset="utf-8"></script>

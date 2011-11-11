@@ -52,7 +52,7 @@ table {
 
 body{
    font-size:16px;
-   font-family:sans-serif;
+   font-family: 'Mako', sans-serif;
    line-height:18px;
 }
 
@@ -106,6 +106,10 @@ body{
    position:relative;
    width:900px;
    height:450px;
+}
+
+.directions{
+   font-size:12px;
 }
 
 #settings{

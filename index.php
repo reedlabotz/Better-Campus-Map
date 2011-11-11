@@ -44,11 +44,11 @@ require("head.php");
 		// Generate content
 		var size = 200;
 		var frag = document.createDocumentFragment();
-		for (var row=0;row<15; row++) {
-			for (var col=0; col<11; col++) {
+		for (var row=0;row<11; row++) {
+			for (var col=0; col<12; col++) {
 				elem = document.createElement("div");
 				//elem.style.backgroundColor = row%2 + col%2 > 0 ? "#ddd" : "";
-				elem.style.backgroundImage="url('images/maps/map_"+row+"_"+col+".jpg')";
+				elem.style.backgroundImage="url('images/maps/maps_"+row+"_"+col+".jpg')";
 				elem.style.width = cellWidth + "px";
 				elem.style.height = cellHeight + "px";
 				elem.style.display = "inline-block";
