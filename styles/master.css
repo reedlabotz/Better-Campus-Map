@@ -130,10 +130,11 @@ body{
    display:block;
    color:black;
    text-decoration:none;
+   background:#c9cccf;
 }
 
 .tab.selected a{
-   background:#c9cccf;
+   background:#ffffff;
 }
 
 .bikeIcon{
