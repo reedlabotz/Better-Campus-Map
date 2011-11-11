@@ -14,13 +14,13 @@ $floor = mysql_real_escape_string($_GET['floor']);
 		?>
 		<div style="position:absolute;top:<?= $thing['y']; ?>;left:<?= $thing['x']; ?>;">
 			<?
-			if($thing['type'] == "E" && $e == true){
+			if($thing['type'] == "E" && $e == "true"){
 				echo '<img src="images/icons/ElevatorIcon.png" width="25" alt="ElevatorIcon">';
-			}else if($thing['type'] == "S" && $e == true){
+			}else if($thing['type'] == "S" && $e == "true"){
 				echo '<img src="images/icons/StairIcon.png" width="25" alt="StairIcon">';
-			}else if($thing['type'] == "R" && $r == true){
+			}else if($thing['type'] == "R" && $r == "true"){
 				echo '<img src="images/icons/RestroomIcon.png" width="25" alt="RestroomIcon">';
-			}else if($thing['type'] == "F" && $f == true){
+			}else if($thing['type'] == "F" && $f == "true"){
 				echo '<img src="images/icons/FoodIcon.png" width="25" alt="FoodIcon">';
 			}
 			?>
