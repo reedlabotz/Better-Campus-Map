@@ -51,7 +51,6 @@ $floor = mysql_real_escape_string($_GET['floor']);
 		</div>
 		<?
 	}
-	mysql_free_result($result);
 	
 	?>
 	<img src="images/maps/<?= $id ?>/<?= $floor ?>.png" width="500" alt="0">

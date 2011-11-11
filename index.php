@@ -17,7 +17,6 @@ require('database.php');
 						<a href="info.php?id=<?= $building['id']; ?>" style="position:absolute;top:<?= $building['y']; ?>px;left:<?= $building['x']; ?>px;width:<?= $building['width']; ?>px;height:<?= $building['height']; ?>px;text-decoration:none;">&nbsp;</a>
 						<?
 					}
-					mysql_free_result($result);
 				
 				?>
    		</div>
