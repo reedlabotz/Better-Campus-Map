@@ -17,7 +17,6 @@ require('database.php');
 						<a href="info.php?id=<?= $building['id']; ?>" style="position:absolute;top:<?= $building['y']; ?>px;left:<?= $building['x']; ?>px;width:<?= $building['width']; ?>px;height:<?= $building['height']; ?>px;text-decoration:none;">&nbsp;</a>
 						<?
 					}
-					mysql_free_result($result);
 				
 				?>
    		</div>
@@ -67,7 +66,7 @@ require('database.php');
 				zynga.common.Style.set(content, "transform", "translate(" + (-left) + "px," + (-top) + "px) scale(" + zoom + ")");
 			};
 		}
-
+		scroller.zoomTo(.5);
 	</script>
 <?php
 require("foot.php");

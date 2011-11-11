@@ -62,7 +62,6 @@ $floors = split(",",$row['floors']);
 						<a href="info.php?id=<?= $building['id']; ?>" style="position:absolute;top:<?= $building['y']; ?>px;left:<?= $building['x']; ?>px;width:<?= $building['width']; ?>px;height:<?= $building['height']; ?>px;text-decoration:none;">&nbsp;</a>
 						<?
 					}
-					mysql_free_result($result);
 				
 				?>
    			<?
@@ -76,6 +75,7 @@ $floors = split(",",$row['floors']);
 								echo '<img src="images/icons/BikeIcon.png" width="25" alt="BikeIcon" class="bikeIcon">';
 							}else if($thing['type'] == "T"){
 								echo '<img src="images/icons/BusIcon.png" width="25" alt="BusIcon" class="busIcon">';
+								echo "<div class='infoBox'><p>".$thing['details']."</p></div>";
 							}else if($thing['type'] == "D"){
 								echo '<img src="images/icons/DoorIcon.png" width="25" alt="DoorIcon" class="doorIcon">';
 							}else if($thing['type'] == "P"){
@@ -86,7 +86,6 @@ $floors = split(",",$row['floors']);
 						</div>
 						<?
 					}
-					mysql_free_result($result);
 				
 				?>
    		</div>
@@ -262,6 +261,12 @@ $floors = split(",",$row['floors']);
 			});
 			
 			$(".icon .parkingIcon").hover(function(){
+				$(this).parent().children(".infoBox").show();
+			},function(){
+				$(this).parent().children(".infoBox").hide();
+			});
+			
+			$(".icon .busIcon").hover(function(){
 				$(this).parent().children(".infoBox").show();
 			},function(){
 				$(this).parent().children(".infoBox").hide();
