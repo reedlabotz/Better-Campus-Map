@@ -31,6 +31,13 @@ body{
 	user-select: none;
 }
 
+#controls{
+   position:absolute;
+   top:5px;
+   left:5px;
+   z-index:900;
+}
+
 #content{
 	background: white;
 	

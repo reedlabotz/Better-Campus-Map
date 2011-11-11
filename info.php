@@ -1,11 +1,45 @@
 <?php
 require("head.php");
+require('database.php');
+$id = mysql_real_escape_string($_GET['id']);
+
+$query = "select * from buildings WHERE id='$id'";
+$result = mysql_query($query);
+$row = mysql_fetch_array($result, MYSQL_ASSOC);
+mysql_free_result($result);
+$today = getdate();
+
+$dow = $today['wday'];
+$dows = array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 ?>
    <div class="left">
-      Digital Computing Laboratory
+      <p class="name"><?= $row['name'] ?></p>
+		<p class="address"><?= $row['address'] ?></p>
+		<p class="phone"><?= $row['phone'] ?></p>
+		<p class="hours">
+			<? 
+			for($i=0;$i<7;$i++){
+				if($i == $dow){
+					echo "<strong>";
+				}
+				echo $dows[$i].": ".$row["hours_".$i];
+				if($i == $dow){
+					echo "</strong>";
+				}
+				if($i != 6){
+					echo "<br>\n";
+				}
+			} 
+			?>
+		</p>
+		<p class="directions"><a href="http://maps.google.com/maps?daddr=<?= urlifyAddress($row['address']); ?>">Google Maps Directions</a> | <a href="http://www.cumtd.com/maps-and-schedules/bus-stops/search?query=<?= urlifyAddress($row['address']); ?>">CUMTD Directions</a></p>
    </div>
    <div class="right">
 	   <div id="container">
+			<div id="controls">
+				<img src="images/buttons/plusButton.png" width="25" height="26" alt="PlusButton" id="zoomInBtn"><br>
+				<img src="images/buttons/minusButton.png" width="25" height="26" alt="MinusButton" id="zoomOutBtn">
+			</div>
    		<div id="content"></div>
    	</div>
 	</div>
@@ -47,11 +81,11 @@ require("head.php");
 		// Generate content
 		var size = 200;
 		var frag = document.createDocumentFragment();
-		for (var row=0;row<15; row++) {
-			for (var col=0; col<11; col++) {
+		for (var row=0;row<11; row++) {
+			for (var col=0; col<12; col++) {
 				elem = document.createElement("div");
 				//elem.style.backgroundColor = row%2 + col%2 > 0 ? "#ddd" : "";
-				elem.style.backgroundImage="url('images/maps/map_"+row+"_"+col+".jpg')";
+				elem.style.backgroundImage="url('images/maps/maps_"+row+"_"+col+".jpg')";
 				elem.style.width = cellWidth + "px";
 				elem.style.height = cellHeight + "px";
 				elem.style.display = "inline-block";
@@ -77,4 +111,8 @@ require("head.php");
 	</script>
 <?php
 require("foot.php");
+function urlifyAddress($address){
+	$address = str_replace("<br />"," ",$address);
+	return urlencode($address);
+}
 ?>
